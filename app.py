@@ -298,15 +298,6 @@ elif page == "📚 View Code":
             st.code(code, language="python")
         except Exception as e:
             st.error(f"Error: Unable to read the file. Details: {e}")
-
-    elif project.startswith("📝"):
-        try:
-            with open("sir_form.py", "r", encoding="utf-8") as file:
-                code = file.read()
-            st.code(code, language="python")
-        except Exception as e:
-            st.error(f"Error: Unable to read the file. Details: {e}")
-
 # Use Google Colab
 elif page == "☁️ Use Google Colab":
     st.title("☁️ How to Use Google Colab for Your Projects")
