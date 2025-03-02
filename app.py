@@ -10,7 +10,7 @@ import expense_tracker
 import story_generator
 import computer_guessing_game
 import rock_paper_scissors
-import official_form
+import sir_form
 
 # Set page configuration for wide layout and custom title
 st.set_page_config(
@@ -136,7 +136,7 @@ page = st.sidebar.radio("Go to:", [
     "📖 Story Generator",
     "🤖 Computer Guessing Game",
     "✌️ Rock-Paper-Scissors",
-    "📝 official Form",
+    "📝 Sir's Form",
     "📚 View Code",
     "☁️ Use Google Colab"
 ])
@@ -163,7 +163,7 @@ if page == "🏠 Home":
                 <li><strong>💰 Expense Tracker</strong>: Manage your finances.</li>
                 <li><strong>📖 Story Generator</strong>: Create magical tales.</li>
                 <li><strong>🤖 Computer Guessing Game</strong>: Let the computer guess your number.</li>
-                <li><strong>📝 official Form</strong>: Submit your details for feedback.</li>
+                <li><strong>📝 Sir's Form</strong>: Submit your details for feedback.</li>
             </ul>
         </div>
     """, unsafe_allow_html=True)
@@ -206,7 +206,7 @@ elif page == "✌️ Rock-Paper-Scissors":
 
 # Sir's Form
 elif page == "📝 Sir's Form":
-    official_form.run()
+    sir_form.run()
 
 # View Code
 elif page == "📚 View Code":
@@ -223,8 +223,9 @@ elif page == "📚 View Code":
         "💰 Expense Tracker",
         "📖 Story Generator",
         "🤖 Computer Guessing Game",
-        "✌️ Rock-Paper-Scissors"
-        ])
+        "✌️ Rock-Paper-Scissors",
+        "📝 Sir's Form"
+    ])
 
     # Display code based on selection
     if project.startswith("📊"):
@@ -298,6 +299,15 @@ elif page == "📚 View Code":
             st.code(code, language="python")
         except Exception as e:
             st.error(f"Error: Unable to read the file. Details: {e}")
+
+    elif project.startswith("📝"):
+        try:
+            with open("sir_form.py", "r", encoding="utf-8") as file:
+                code = file.read()
+            st.code(code, language="python")
+        except Exception as e:
+            st.error(f"Error: Unable to read the file. Details: {e}")
+
 # Use Google Colab
 elif page == "☁️ Use Google Colab":
     st.title("☁️ How to Use Google Colab for Your Projects")
