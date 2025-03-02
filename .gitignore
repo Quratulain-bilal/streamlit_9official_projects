@@ -1,0 +1,51 @@
+# Byte-compiled Python files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# PyCharm IDE files
+.idea/
+*.iml
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+
+# Streamlit cache
+.streamlit/
+
+# Log files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
+build/
+dist/
+
+# Virtual environment files
+.tox/
+pip-wheel-metadata/
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Google Colab specific files
+*.ipynb
