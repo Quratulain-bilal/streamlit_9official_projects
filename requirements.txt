@@ -1,5 +1,4 @@
-streamlit
-pandas
-numpy
-random
-pyngrok
+streamlit==1.22.0
+pandas==2.0.3
+numpy==1.23.5
+pyngrok==5.1.0
