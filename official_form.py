@@ -1,7 +1,7 @@
 import streamlit as st
 
 def run():
-    st.title("📝 Sir's Form Submission")
+    st.title("📝official_form Submission")
     st.markdown("Fill out the form below to submit your details.")
 
     # Add Google Form link
