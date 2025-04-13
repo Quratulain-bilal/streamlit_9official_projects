@@ -1,4 +1,4 @@
-Python Projects Hub - README
+Python Projects Hub
 🌟 Overview
 Python Projects Hub is a comprehensive Streamlit application that brings together multiple Python projects in one interactive interface. This hub serves as a showcase for various Python programming concepts and practical applications, making it an excellent resource for learning and experimentation.
 
